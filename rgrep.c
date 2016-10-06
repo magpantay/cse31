@@ -81,15 +81,15 @@ int rgrep_matches(char *line, char *pattern) {
 		}
 		if (boolean0 == 1) //do questionMark
 		{
-			char string_without_char[strlen(pattern) - 2]; //= [(strlen(pattern) - 2)];
-			char string_with_char[strlen(pattern) - 1];// = [(strlen(pattern) - 1)];
+			char string_without_char[strlen(pattern) - 2];
+			char string_with_char[strlen(pattern) - 1];
 	
 			int traverse_1 = 0;
 			int traverse_2 = 0;
 			
 			while (pattern[traverse_1] != '\0') //with the character
 			{
-				if (pattern [traverse_1] == '?') //doesn't fully work, but 80% works nonetheless (I'm guessing because the slash needs to be before all?)
+				if (pattern [traverse_1] == '?')
 				{
 					traverse_1++;
 				}
