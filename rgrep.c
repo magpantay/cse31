@@ -20,6 +20,15 @@ int matches_leading(char *partial_line, char *pattern) {
 			i++; //next char of pattern
 			j++; //next char of partial_line
 		}
+		else if (pattern[i] == '+')
+		{
+			char characterBeforePlus = pattern [i - 1];
+			while(characterBeforePlus == partial_line[j])
+			{
+					j++;
+			}	
+			i++;
+		}
 		else if (pattern[i] != partial_line[j])
 		{
 			i = 0; //reset pattern to start at 0
