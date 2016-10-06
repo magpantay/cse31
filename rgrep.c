@@ -15,7 +15,7 @@ int matches_leading(char *partial_line, char *pattern) {
 		{
 			return 0; //nothing matches
 		}
-		else if (pattern[i] == partial_line[j])
+		else if ((pattern[i] == partial_line[j]) || ((pattern[i] == '.')&&(partial_line[j + 1] != '\0'))) //'.' acts like a match
 		{
 			i++; //next char of pattern
 			j++; //next char of partial_line
