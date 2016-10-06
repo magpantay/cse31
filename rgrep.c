@@ -7,7 +7,7 @@
  * the first char of partial_line.
  */
 int matches_leading(char *partial_line, char *pattern) {
-  int i = 0;
+	int i = 0;
 	int j = 0;
 	while (pattern[i] != '\0')
 	{
@@ -41,7 +41,7 @@ int matches_leading(char *partial_line, char *pattern) {
 		}
 	}
 
-   return 1;
+	return 1;
 }
 
 /**
