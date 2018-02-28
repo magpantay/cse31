@@ -6,4 +6,4 @@ The project implementation is grep, a search function commonly found in UNIX-bas
     . (period) Matches any character.
     + (plus) The preceding character will appear one or more times
     ? (question) The preceding character may or may not appear in the line
-    \ (backslash) "Escapes" the following character, nullifying any special characteristics
+    \\ (backslash) "Escapes" the following character, nullifying any special characteristics
