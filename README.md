@@ -1,5 +1,5 @@
 # CSE 31: Computer Assembly and Organization
-Restrictive Grep (rgrep) written for my CSE31 class at UC Merced, implemented in C++.
+Restrictive Grep (rgrep) written for my CSE31 class at UC Merced, implemented in C.
 
 ## About
 The project implementation is grep, a search function commonly found in UNIX-based operating systems, but is restrictive with a set of wildcard characters that can be within the pattern (the search term). These include:
